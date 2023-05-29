@@ -484,7 +484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  isPc: 0
+  isPc: 1
 --- !u!136 &545899279
 CapsuleCollider:
   m_ObjectHideFlags: 0

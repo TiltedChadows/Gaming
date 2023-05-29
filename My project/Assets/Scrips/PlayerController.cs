@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 movement = new Vector3(move.x, 0f, move.y);
 
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.1f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.5f);
 
             transform.Translate(movement * speed * Time.deltaTime, Space.World);
         }
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
             if (aimDirection != Vector3.zero)
             {
-                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 0.5f);
             }
         }
         else
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
 
             if (aimDirection != Vector3.zero)
             {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(aimDirection), 0.15f);
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(aimDirection), 0.5f);
             }
         }
         
